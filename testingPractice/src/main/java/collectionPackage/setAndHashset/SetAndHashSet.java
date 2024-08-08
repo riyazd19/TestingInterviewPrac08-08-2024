@@ -23,7 +23,7 @@ public class SetAndHashSet {
        Iterator<Integer> hasInteger= set.iterator();
        while(hasInteger.hasNext()){
         System.out.println(hasInteger.next());
-
+       }
         //now if i have a arraylist which is having duplicates and i need to 
         // remove the duplicats 
 
@@ -35,12 +35,16 @@ public class SetAndHashSet {
         list.add(14);
         //up above you can see there are duplicate elements 
         // now we can simply put them in hashset so the duplicates will be removed
-
+        System.out.println("from list");
         for(Integer inlist:list){
-            System.out.println("--------");
+            
             System.out.println(inlist);
+            
         }
+        //now to put list elements in set
+        Set<Integer> set2= new HashSet<>(list);
+        System.out.println("the element without duplicate are:-  " +set2);
         
-       }
+       
     }
 }
