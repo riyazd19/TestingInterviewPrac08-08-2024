@@ -35,6 +35,11 @@ public class SetAndHashSet {
         list.add(14);
         //up above you can see there are duplicate elements 
         // now we can simply put them in hashset so the duplicates will be removed
+
+        for(Integer inlist:list){
+            System.out.println("--------");
+            System.out.println(inlist);
+        }
         
        }
     }
